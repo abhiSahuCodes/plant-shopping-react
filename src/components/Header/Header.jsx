@@ -14,6 +14,9 @@ const Header = () => {
           <h1 className="company-name">Paradise Nursery</h1>
           <p className="tagline">Bringing Nature to Your Doorstep</p>
         </Link>
+        <Link to='/products' className='products-button'>
+          <p>Plants</p>
+        </Link>
         <Link to="/cart" className="cart-icon">
           <FaShoppingCart size={32} />
           {cartQuantity > 0 && <span className="cart-count">{cartQuantity}</span>}

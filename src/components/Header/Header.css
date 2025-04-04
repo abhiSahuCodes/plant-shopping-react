@@ -34,6 +34,12 @@
   color: #ffffff;
 }
 
+.products-button {
+  font-size: 1.5rem;
+  margin: 0.2rem 0 0;
+  color: #ffffff;
+}
+
 .cart-icon {
   display: flex;
   align-items: center;
