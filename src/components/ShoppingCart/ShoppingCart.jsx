@@ -28,7 +28,7 @@ const ShoppingCart = () => {
       <div className="empty-cart">
         <h2>Your Cart is empty</h2>
         <p>Total Cart Amount: $0</p>
-        <Link to="/" className="continue-shopping-btn">
+        <Link to="/products" className="continue-shopping-btn">
           Continue Shopping
         </Link>
       </div>
@@ -64,7 +64,7 @@ const ShoppingCart = () => {
                 className="remove-btn"
                 onClick={() => handleRemoveItem(item.id)}
               >
-                Remove
+                Delete
               </button>
             </div>
           </div>
@@ -83,7 +83,7 @@ const ShoppingCart = () => {
           <Link to="/" className="checkout-btn">
             Checkout
           </Link>
-          <Link to="/" className="continue-shopping-btn">
+          <Link to="/products" className="continue-shopping-btn">
             Continue Shopping
           </Link>
         </div>
