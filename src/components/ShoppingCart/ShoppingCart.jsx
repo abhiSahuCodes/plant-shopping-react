@@ -8,6 +8,7 @@ import {
 } from "../../store/cartSlice";
 import "./ShoppingCart.css";
 import { Link } from "react-router-dom";
+import Header from "../Header/Header";
 
 const ShoppingCart = () => {
   const dispatch = useDispatch();
@@ -25,6 +26,8 @@ const ShoppingCart = () => {
 
   if (cartItems.length === 0) {
     return (
+      <>
+      <Header />
       <div className="empty-cart">
         <h2>Your Cart is empty</h2>
         <p>Total Cart Amount: $0</p>
@@ -32,10 +35,13 @@ const ShoppingCart = () => {
           Continue Shopping
         </Link>
       </div>
+      </>
     );
   }
 
   return (
+    <>
+    <Header />
     <div className="shopping-cart">
       <h2>Shopping Cart</h2>
       <div className="cart-items">
@@ -89,6 +95,7 @@ const ShoppingCart = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -3,6 +3,7 @@ import { selectAllPlants, selectPlantsByCategory } from '../../store/plantsSlice
 import { addToCart } from '../../store/cartSlice';
 import './ProductList.css';
 import { useState } from 'react';
+import Header from '../Header/Header';
 
 const ProductList = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,8 @@ const ProductList = () => {
   };
 
   return (
+    <>
+    <Header />
     <div className="product-list-container">
       <div className="category-filter">
         <button
@@ -61,6 +64,7 @@ const ProductList = () => {
         ))}
       </div>
     </div>
+    </>
   );
 };
 
