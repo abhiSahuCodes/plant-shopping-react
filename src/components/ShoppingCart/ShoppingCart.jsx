@@ -3,8 +3,8 @@ import {
   selectCartItems,
   selectCartTotalQuantity,
   selectCartTotalAmount,
-  removeFromCart,
   updateQuantity,
+  removeItem,
 } from "../../store/cartSlice";
 import "./ShoppingCart.css";
 import { Link } from "react-router-dom";
