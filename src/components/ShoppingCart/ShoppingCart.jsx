@@ -24,7 +24,7 @@ const ShoppingCart = () => {
   };
 
   const handleRemoveItem = (id) => {
-    dispatch(removeFromCart(id));
+    dispatch(removeItem(id));
   };
 
   if (cartItems.length === 0) {

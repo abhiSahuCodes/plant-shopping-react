@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { selectAllPlants, selectPlantsByCategory } from '../../store/plantsSlice';
-import { addToCart } from '../../store/cartSlice';
+import { addItem } from '../../store/cartSlice';
 import './ProductList.css';
 import { useState } from 'react';
 import Header from '../Header/Header';
@@ -17,7 +17,7 @@ const ProductList = () => {
   const filteredPlants = selectedCategory ? plantsByCategory : allPlants;
 
   const handleAddToCart = (plant) => {
-    dispatch(addToCart(plant));
+    dispatch(addItem(plant));
     setAddedItems([...addedItems, plant.id]);
   };
 
